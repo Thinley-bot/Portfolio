@@ -1,0 +1,37 @@
+import React from 'react'
+import "./Footer.css"
+import Youtube from '../Youtube/Youtube'
+import Wave from "../../img/wave.png"
+import Insta from "@iconscout/react-unicons/icons/uil-linkedin"
+import Facebook from "@iconscout/react-unicons/icons/uil-facebook"
+import Github from "@iconscout/react-unicons/icons/uil-github"
+
+const Footer = () => {
+  return (
+    <div className="footer">
+
+
+        <img src={Wave} alt="" style={{width:"100%"}} />
+
+        <div className="f-content">
+             <Youtube embedId="Qf-2eYSHvB4"/>
+            
+            <div className="f-icons">
+                <a href="https://www.instagram.com/thinleynoddy/">
+                <Insta color="white" size="3rem"/>
+                </a>
+                <a href="https://www.facebook.com/thinley.norbbuu/">
+                <Facebook color="white" size="3rem"/>
+                </a>
+                <a href="https://github.com/Thinley-bot">
+                <Github color="white" size="3rem"/>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+    
+  )
+}
+
+export default Footer

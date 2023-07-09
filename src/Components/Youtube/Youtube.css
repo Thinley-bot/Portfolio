@@ -1,0 +1,22 @@
+.video-responsive{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+.video-responsive span:nth-child(1){
+    color:var(--black);
+    font-weight: bold;
+    font-size:3rem;
+}
+@media screen and (max-width: 480px) {
+    .video-responsive{
+    margin-bottom: 12rem;
+    }
+    .video-responsive > span{
+        display: none;
+    }
+    .video-responsive > iframe{
+        height: 10rem;
+        width:20rem;
+    }
+}
